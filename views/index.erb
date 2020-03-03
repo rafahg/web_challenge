@@ -1,6 +1,14 @@
+
+
+ <h3>My name is <%= @names %></h3>
+
+ <%if @names %>
+ <form action="/named-cat" method="get">
+ <input type="text" name="name">
+ <input type="submit" value = "Submit">
+</form>
+<%end%>
 <div >
  <img style='border: 3px dashed red' src='http://bit.ly/1eze8aE'>
  </div>
- hi there, good people.
- <br><br>
- <h3>My name is <%=@names%></h3>
+

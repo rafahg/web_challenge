@@ -13,8 +13,13 @@ get '/' do
   'Lupus in latin does not mean beer'
 end 
 
-get '/cat' do 
+get '/ramdom-cat' do 
  @names = ['fiz','sparky','dame','gato'].sample 
  erb(:index)
-
 end
+
+get '/named-cat' do 
+  p params
+  @names = params[:name]
+  erb(:index)
+ end
